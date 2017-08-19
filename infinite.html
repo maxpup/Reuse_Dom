@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>无限dom</title>
+    <style media="screen">
+      #infinite_list{
+        list-style: none;
+        width: 100%;
+        padding: 10px;
+      }
+      .infinite_item{
+        border: 1px solid #666;
+        border-radius: 5px;
+        height: 40px;
+        line-height: 40px;
+        margin: 10px;
+        text-align:center;
+      }
+      .infinite_item:nth-child(2n+1){
+        border-color: #00CC99
+      }
+      #sentinel{
+        width: 1px;
+        height: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="infinite_list">
+      <li id="sentinel"></li>
+    </ul>
+    <script src="./infiniteList.js" charset="utf-8"></script>
+  </body>
+</html>
